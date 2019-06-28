@@ -1,0 +1,238 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:400,600,900&display=swap");
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  min-height: 100vh;
+
+  display: flex;
+  flex-direction: column;
+}
+
+h1 {
+  font-weight: 600;
+}
+
+
+/** INDEX **/
+.principal__index {
+  display: flex;
+  flex: 1;
+  flex-wrap: wrap;
+}
+
+.boas-vindas__index {
+  flex: 2;
+  background-color: #d9e1e8;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.boas-vindas__index h1 {
+  display: inline-block;
+}
+
+.registrar__index {
+  flex: 1;
+  background-color: #9baec8;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.formulario__index {
+  margin: 0 auto;
+  padding: 20px;
+  width: 80%;
+  height: 90%;
+  background-color: #d9e1e8;
+}
+
+input {
+  width: 80%;
+}
+/*** FIM INDEX ***/
+
+/*** HOME ***/
+.container {
+  display: flex;
+  flex: 1;
+}
+
+
+.display-principal {
+    padding: 5%;
+    flex: 4;
+    background-color: #d9e1e8;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+/* topicos */
+.topico-ind__home {
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+.topico-ind__home a {
+    text-decoration: none;
+    display: inline-block;
+    width: 100%;
+    padding: 15px 15px;
+    color: #282c37;
+}
+
+/* lista de contatos*/
+.nav {
+    padding: 0px;
+}
+
+.contatos {
+    flex: 1;
+    background-color: #282c37;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+.contato-ind {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    border-top: 1px #9baec8 solid;
+}
+
+.contato-ind a {
+    text-decoration: none;
+    display: inline-block;
+    width: 100%;
+    padding: 15px 15px;
+    color: white;
+}
+
+.contato-ind a:hover {
+    background-color: #9baec8; 
+    color: white;
+}
+/*** FIM HOME ***/
+
+/*** PERFIL ***/
+
+/*** FIM PERFIL ***/
+
+/*** HEADER ***/
+nav {
+  width: 100%;
+  background-color: #282c37;
+  padding-left: 30px;
+  padding-right: 10px;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 8vh;
+}
+
+.logo {
+  display: inline-block;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  align-items: center;
+}
+
+.nav-item a {
+  display: inline-block;
+  padding: 15px 15px;
+  text-decoration: none;
+  color: #f0f5f9;
+}
+
+.nav-item:hover {
+  color: white;
+}
+
+.nav-item:hover a {
+  color: #c9d6de;
+}
+
+nav img {
+  height: 60px;
+  vertical-align: middle;
+}
+/***** **** *****/
+
+/*** FOOTER ***/
+footer {
+  height: 6vh;
+  background-color: #282c37;
+
+  display: flex;
+  color: #c9d6de;
+  justify-content: end;
+  align-items: center;
+}
+
+footer a {
+  display: inline-block;
+  padding: 15px 50px;
+  text-decoration: none;
+  color: #f0f5f9;
+}
+/*** *** *****/
+
+/** BOTÕES **/
+.btn-login {
+  padding: 5px 15px;
+  color: #ffffff;
+  font-weight: 700;
+  margin: 10px;
+  background-color: #2b90d9;
+  font-size: 15px;
+  border: 1px solid #f0f5f9;
+}
+
+.btn-login:hover {
+  background-color: #52616a;
+  color: white;
+}
+
+.btn-registrar {
+  padding: 5px 15px;
+  font-weight: 700;
+  color: #ffffff;
+  margin: 10px;
+  background-color: #282c37;
+  font-size: 15px;
+  border: 1px solid #f0f5f9;
+}
+
+.btn-registrar:hover {
+  background-color: #52616a;
+  color: white;
+}
+/*** *** ***/
+
