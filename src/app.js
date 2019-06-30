@@ -19,7 +19,7 @@ app.set('view engine', 'hbs');
 app.set('views', viewsPath);
 hbs.registerPartials(partialsPath)
 
-// ::: app.get() : Método que configura nosso servidor como responder um GET request (html, JSON etc.)
+// ::: app.get() : Método que configura como nosso servidor responde um GET request (html, JSON etc.)
 // Arg 1: route
 // Arg 2: função que especifica o que queremos fazer quando
 // alguém requisita o route do arg 1.
@@ -57,7 +57,7 @@ app.get('/perfil', (req, res) => {
 });
 
 app.listen(port, () => {
-    console.log('Server is up on port 3000')
+    console.log(`Server is up on ${port}`)
 });
 
 /* É importatne saber sobre Query strings. A maneira como o browser passa a informação para o servidor através daurl é por json também (key : value pairs) Começa depois da ?. As opções começam depois de & 
