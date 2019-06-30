@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>Home</title>
+
+    <!-- Bootstrap CSS CDN -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css"
+        integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+    <!-- Our Custom CSS -->
+    <link rel="stylesheet" href="./css/style.css">
+
+    <script src="https://kit.fontawesome.com/29e975f746.js"></script>
+</head>
+
+<body>
+
+
+    <div class="wrapper">
+
+        <!-- Sidebar -->
+        <nav id="sidebar">
+            <div class="wrapper">
+
+                <nav id="sidebar">
+                    <div class="sidebar-header">
+                        <h1>Frank</h1>
+                    </div>
+
+                    <ul class="list-unstyled components">
+                        <h4>Contatos</h4>
+                        <li class="">
+                            <a href="#gerenciaSubmenu" data-toggle="collapse" aria-expanded="false"
+                                class="dropdown-toggle">Gerência</a>
+                            <ul class="collapse list-unstyled" id="gerenciaSubmenu">
+                                <li>
+                                    <a href="#"><img id="navBarFotoPerfil" src="    ./img/profile.PNG" alt="Usuario"> Contato 1</a>
+                                </li>
+                                <li>
+                                    <a href="#"><img id="navBarFotoPerfil" src="./img/profile.PNG" alt="Usuario"> Contato 2</a>
+                                </li>
+                                <li>
+                                    <a href="#"><img id="navBarFotoPerfil" src="./img/profile.PNG" alt="Usuario"> Contato 3</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#funcionariosSubmenu" data-toggle="collapse" aria-expanded="false"
+                                class="dropdown-toggle">Funcionários</a>
+                            <ul class="collapse list-unstyled" id="funcionariosSubmenu">
+                                <li>
+                                    <a href="#"><img id="navBarFotoPerfil" src="./img/profile.PNG" alt="Usuario"> Contato 2</a>
+                                </li>
+                                <li>
+                                    <a href="#"><img id="navBarFotoPerfil" src="./img/profile.PNG" alt="Usuario"> Contato 5</a>
+                                </li>
+                                <li>
+                                    <a href="#"><img id="navBarFotoPerfil" src="./img/profile.PNG" alt="Usuario"> Contato 6</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#filialSubmenu" data-toggle="collapse" aria-expanded="false"
+                                class="dropdown-toggle">Filial </a>
+                            <ul class="collapse list-unstyled" id="filialSubmenu">
+                                <li>
+                                    <a href="#"><img id="navBarFotoPerfil" src="./img/profile.PNG" alt="Usuario"> Contato 1</a>
+                                </li>
+                                <li>
+                                    <a href="#"><img id="navBarFotoPerfil" src="./img/profile.PNG" alt="Usuario"> Contato 3</a>
+                                </li>
+                                <li>
+                                    <a href="#"><img id="navBarFotoPerfil" src="./img/profile.PNG" alt="Usuario"> Contato 7</a>
+                                </li>
+                            </ul>
+                        </li>
+
+
+                    </ul>
+                    <ul class="list-unstyled" id=sidebarFooter>
+                        <li>
+                            <a href="topicos">Tópicos Abertos</a>
+                        </li>
+                        <li>
+                            <a href="#">Contact</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </nav>
+
+        <!-- Page Content -->
+        <div id="content">
+
+            <!-- Nav bar -->
+            <nav class="navbar navbar-expand-lg">
+                <div class="container-fluid">
+
+                    <button type="button" id="sidebarCollapse" class="btn btn-info">
+                        <i class="fas fa-align-left"></i>
+                        <span>Contatos</span>
+                    </button>
+                    <button class="btn btn-dark d-inline-block d-lg-none ml-auto" type="button" data-toggle="collapse"
+                        data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <i class="fas fa-align-justify"></i>
+                    </button>
+
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="nav navbar-nav ml-auto">
+                            <!-- Notificações-->
+                            <li class="nav-item active">
+                                <a class="nav-link" href=""><i class="far fa-bell"></i></a>
+                            </li>
+
+
+                            <li class="nav-item dropdown float-left">
+                                <a class="nav-link dropdown-toggle " href="#" id="navbarDropdown" role="button"
+                                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <!-- Perfil -->
+                                    <img id="navBarFotoPerfil" src="./img/profile.PNG" alt="Usuario">
+                                </a>
+                                <div id="dropdownPerfil" class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <a class="dropdown-item" href="#">Perfil</a>
+                                    <a class="dropdown-item" href="#">Log out</a>
+                                </div>
+                            </li>
+
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+
+            <!--Topico em aberto-->
+            <div class="container">
+                <h1>Em Aberto</h1>
+                <div class="py-4">
+                        <a href=""><h5 class="mb-3">Por favor, onde acho abacate?</h5></a> 
+                        <div class="p-4 bg-light rounded shadow-sm">
+                            <p class="font-italic mb-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+                            <ul class="list-inline small text-muted mt-3 mb-0">
+                                <li class="list-inline-item"><i class="fa fa-comment-o mr-2"></i>5 Comments</li>
+                                <li class="list-inline-item"><i class="fa fa-heart-o mr-2"></i>12 Likes</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="py-4">
+                            <a href=""><h5 class="mb-3">Sugestão para novo fornecedor</h5></a> 
+                            <div class="p-4 bg-light rounded shadow-sm">
+                                <p class="font-italic mb-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+                                <ul class="list-inline small text-muted mt-3 mb-0">
+                                    <li class="list-inline-item"><i class="fa fa-comment-o mr-2"></i>12 Comments</li>
+                                    <li class="list-inline-item"><i class="fa fa-heart-o mr-2"></i>20 Likes</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="py-4">
+                                <a href=""><h5 class="mb-3">Sugestão para novo fornecedor</h5></a> 
+                                <div class="p-4 bg-light rounded shadow-sm">
+                                    <p class="font-italic mb-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+                                    <ul class="list-inline small text-muted mt-3 mb-0">
+                                        <li class="list-inline-item"><i class="fa fa-comment-o mr-2"></i>12 Comments</li>
+                                        <li class="list-inline-item"><i class="fa fa-heart-o mr-2"></i>20 Likes</li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="py-4">
+                                    <a href=""><h5 class="mb-3">Sugestão para novo fornecedor</h5></a> 
+                                    <div class="p-4 bg-light rounded shadow-sm">
+                                        <p class="font-italic mb-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+                                        <ul class="list-inline small text-muted mt-3 mb-0">
+                                            <li class="list-inline-item"><i class="fa fa-comment-o mr-2"></i>12 Comments</li>
+                                            <li class="list-inline-item"><i class="fa fa-heart-o mr-2"></i>20 Likes</li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                                <div class="py-4">
+                                        <a href=""><h5 class="mb-3">Sugestão para novo fornecedor</h5></a> 
+                                        <div class="p-4 bg-light rounded shadow-sm">
+                                            <p class="font-italic mb-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+                                            <ul class="list-inline small text-muted mt-3 mb-0">
+                                                <li class="list-inline-item"><i class="fa fa-comment-o mr-2"></i>12 Comments</li>
+                                                <li class="list-inline-item"><i class="fa fa-heart-o mr-2"></i>20 Likes</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+
+                                    <div class="py-4">
+                                            <a href=""><h5 class="mb-3">Sugestão para novo fornecedor</h5></a> 
+                                            <div class="p-4 bg-light rounded shadow-sm">
+                                                <p class="font-italic mb-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+                                                <ul class="list-inline small text-muted mt-3 mb-0">
+                                                    <li class="list-inline-item"><i class="fa fa-comment-o mr-2"></i>12 Comments</li>
+                                                    <li class="list-inline-item"><i class="fa fa-heart-o mr-2"></i>20 Likes</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                    </div> 
+                </div> 
+                    
+                
+            </div>
+            
+               
+            <footer class="py-4 bg-dark flex-shrink-0">
+                    <div class="container text-center">
+                      <a href="https://bootstrapious.com/snippets" class="text-muted">Bootstrap snippet by Bootstrapious</a>
+                    </div>
+                  </footer>
+
+            </div>
+        </div>
+
+
+    </div>
+
+    <!-- jQuery CDN - Slim version (=without AJAX) -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <!-- Popper.JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"
+        integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ"
+        crossorigin="anonymous"></script>
+    <!-- Bootstrap JS -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"
+        integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm"
+        crossorigin="anonymous"></script>
+    <script src="./js/app.js"></script>
+
+</body>
+
+</html>
