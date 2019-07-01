@@ -228,3 +228,12 @@ h1, h3 {
   margin-bottom: 0;
 }
 /*# sourceMappingURL=style.css.map */
+
+.message a:hover{
+  font-style: normal;
+  text-decoration: none;
+  color: green
+}
+form button:hover,.form button:active{
+  background: blue
+}

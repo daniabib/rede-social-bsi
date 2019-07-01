@@ -1,69 +1,54 @@
 <nav id="sidebar">
-            <div class="wrapper">
+    <div class="wrapper">
 
-                <nav id="sidebar">
-                    <div class="sidebar-header">
-                        <h1>Frank</h1>
-                    </div>
-
-                    <ul class="list-unstyled components">
-                        <h4>Contatos</h4>
-                        <li class="">
-                            <a href="#gerenciaSubmenu" data-toggle="collapse" aria-expanded="false"
-                                class="dropdown-toggle">Gerência</a>
-                            <ul class="collapse list-unstyled" id="gerenciaSubmenu">
-                                <li>
-                                    <a href="#"><img id="navBarFotoPerfil" src="/profile.png" alt="Usuario"> Contato 1</a>
-                                </li>
-                                <li>
-                                    <a href="#"><img id="navBarFotoPerfil" src="/profile.png" alt="Usuario"> Contato 2</a>
-                                </li>
-                                <li>
-                                    <a href="#"><img id="navBarFotoPerfil" src="/profile.png" alt="Usuario"> Contato 3</a>
-                                </li>
-                            </ul>
-                        </li>
-                        <li>
-                            <a href="#funcionariosSubmenu" data-toggle="collapse" aria-expanded="false"
-                                class="dropdown-toggle">Funcionários</a>
-                            <ul class="collapse list-unstyled" id="funcionariosSubmenu">
-                                <li>
-                                    <a href="#"><img id="navBarFotoPerfil" src="/profile.png" alt="Usuario"> Contato 2</a>
-                                </li>
-                                <li>
-                                    <a href="#"><img id="navBarFotoPerfil" src="/profile.png" alt="Usuario"> Contato 5</a>
-                                </li>
-                                <li>
-                                    <a href="#"><img id="navBarFotoPerfil" src="/profile.png" alt="Usuario"> Contato 6</a>
-                                </li>
-                            </ul>
-                        </li>
-                        <li>
-                            <a href="#filialSubmenu" data-toggle="collapse" aria-expanded="false"
-                                class="dropdown-toggle">Filial </a>
-                            <ul class="collapse list-unstyled" id="filialSubmenu">
-                                <li>
-                                    <a href="#"><img id="navBarFotoPerfil" src="/profile.png" alt="Usuario"> Contato 1</a>
-                                </li>
-                                <li>
-                                    <a href="#"><img id="navBarFotoPerfil" src="/profile.png" alt="Usuario"> Contato 3</a>
-                                </li>
-                                <li>
-                                    <a href="#"><img id="navBarFotoPerfil" src="/profile.png" alt="Usuario"> Contato 7</a>
-                                </li>
-                            </ul>
-                        </li>
-
-
-                    </ul>
-                    <ul class="list-unstyled" id=sidebarFooter>
-                        <li>
-                            <a href="topicos">Tópicos Abertos</a>
-                        </li>
-                        <li>
-                            <a href="#">Contact</a>
-                        </li>
-                    </ul>
-                </nav>
+        <nav id="sidebar">
+            <div class="sidebar-header">
+                <a href="/home"><h1>Frank</h1></a>
             </div>
+
+            <ul class="list-unstyled components">
+                <h4>Contatos</h4>
+                {{!-- Gerencia --}}
+                <li class="">
+                    <a href="#gerenciaSubmenu" data-toggle="collapse" aria-expanded="false"
+                        class="dropdown-toggle">Gerência</a>
+                    <ul class="collapse list-unstyled" id="gerenciaSubmenu">
+                        <li>
+                            <a href="/perfil"><img id="navBarFotoPerfil" src="/profile.png" alt="Usuario"> Contato 1</a>
+                        </li>
+                    </ul>
+                </li>
+                {{!-- Funcionarios --}}
+                <li>
+                    <a href="#funcionariosSubmenu" data-toggle="collapse" aria-expanded="false"
+                        class="dropdown-toggle">Funcionários</a>
+                    <ul class="collapse list-unstyled" id="funcionariosSubmenu">
+                        <li>
+                            <a href="/perfil"><img id="navBarFotoPerfil" src="/profile.png" alt="Usuario"> Contato 2</a>
+                        </li>
+                    </ul>
+                </li>
+                {{!-- Filial --}}
+                <li>
+                    <a href="#filialSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Filial
+                    </a>
+                    <ul class="collapse list-unstyled" id="filialSubmenu">
+                        <li>
+                            <a href="/perfil"><img id="navBarFotoPerfil" src="/profile.png" alt="Usuario"> Contato 1</a>
+                        </li>
+                    </ul>
+                </li>
+
+
+            </ul>
+            <ul class="list-unstyled" id=sidebarFooter>
+                <li>
+                    <a href="/topico">Tópicos Abertos</a>
+                </li>
+                <li>
+                    <a href="#">Contact</a>
+                </li>
+            </ul>
         </nav>
+    </div>
+</nav>

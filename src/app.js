@@ -56,6 +56,14 @@ app.get('/perfil', (req, res) => {
     res.render('perfil')
 });
 
+app.get('/notificacoes', (req, res) => {
+    res.render('notificacoes')
+});
+
+app.get('/configuracoes', (req, res) => {
+    res.render('configuracoes')
+});
+
 app.listen(port, () => {
     console.log(`Server is up on ${port}`)
 });
