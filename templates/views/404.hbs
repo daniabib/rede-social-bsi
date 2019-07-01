@@ -18,32 +18,10 @@
 </head>
 
 <body>
+    {{>navbar}}
 
-
-    <div class="wrapper">
-
-        <!-- Sidebar -->
-        {{>sidebar}}
-
-        <!-- Page Content -->
-        <div id="content">
-
-            <!-- Nav bar -->
-            {{>navbar}}
-
-            <div class="container">
-                <h1>Configurações</h1>
-                </div>
-            
-
-        </div>
-    </div>
-    {{>footer}}
-
-    </div>
-    </div>
-
-
+    <div class="container">
+        <h3>{{errorMessage}}</h3>
     </div>
 
     <!-- jQuery CDN - Slim version (=without AJAX) -->

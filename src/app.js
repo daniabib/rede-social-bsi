@@ -1,9 +1,31 @@
 const path = require('path');
 const express = require('express');
 const hbs = require('hbs');
+const mongoose = require('mongoose');
 
+mongoose.connect('mongodb://127.0.0.1:27017/frakdb', { 
+    useNewUrlParser: true,
+    useCreateIndex: true,
+});
+
+let db = mongoose.connection;
+
+// Checar conexão
+db.once('open', function(){
+    console.log('Connected to MongoDB');
+})
+
+// Checa erros DB
+db.on('error', function(){
+    console.log(err);
+});
+
+// Inicia o App
 const app = express();
 const port = process.env.PORT || 3000;
+
+// Carrega os Modulos
+let Article = require('./models/article');
 
 // usamos .join() (do path) para direcionar o express para o nosso diretório público
 const publicDirectoryPath = path.join(__dirname, '../public');
@@ -12,7 +34,8 @@ const partialsPath = path.join(__dirname, '../templates/partials')
 
 
 // Direciona o express para a pasta public como conteudo estatico
-app.use(express.static(publicDirectoryPath))
+app.use(express.static(publicDirectoryPath));
+
 
 // Set up handlebar and views engine
 app.set('view engine', 'hbs');
@@ -62,6 +85,14 @@ app.get('/notificacoes', (req, res) => {
 
 app.get('/configuracoes', (req, res) => {
     res.render('configuracoes')
+});
+
+app.get('*', (req, res) => {
+    res.render('404', {
+        title: '404',
+        name: 'Andrew Mead',
+        errorMessage: 'Página não encontrada'
+    });
 });
 
 app.listen(port, () => {
