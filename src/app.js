@@ -1,7 +1,7 @@
 const path = require('path');
 const express = require('express');
 const hbs = require('hbs');
-const bodyParser = require('body-parser');
+// const bodyParser = require('body-parser');
 
 // Inicia o App
 const app = express();
@@ -49,15 +49,7 @@ app.get('', (req, res) => {
 // });
 
 app.get('/home', async (req, res) => {
-    try {
-        const artigo = await Article.find({});
-        console.log(artigo);
-        res.render('home', {
-            title: artigo,
-        })
-    } catch (e) {
-        res.status(500).send()
-    }
+    res.render('home')
 })
 
 app.get('/login', (req, res) => {
