@@ -1,0 +1,34 @@
+.navbar {
+//   background: $primary-color;
+//   color: $texto-dark;
+  margin-bottom: 40px;
+  padding-right: 20px;
+}
+
+#sidebar ul li.active > a,
+a[aria-expanded="true"] {
+  background: $primaryColor;
+}
+
+#navBarFotoPerfil {
+  height: 30px;
+  border-radius: 50%;
+  padding-right: 5px;
+}
+
+.dropdown-menu {
+  min-width: 6em;
+}
+
+// .navbar button {
+//     background: $secundary-color-light;
+//     border: none;
+// }
+
+// .navbar button:hover {
+//     background: $secundary-color-dark;
+// }
+
+.dropdown-item {
+  padding-right: 0;
+}

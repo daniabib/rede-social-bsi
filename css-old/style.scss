@@ -1,0 +1,45 @@
+$primary-color: #212121;
+$primary-color-dark: #000000;
+$primary-color-light: #484848;
+$secundary-color: #6a1b9a;
+$secundary-color-dark: #38006b;
+$secundary-color-light: #9c4dcc;
+$texto: #000000;  
+$texto-dark: #ffffff;
+
+$transition-time: all 0.3s;
+
+
+
+@import url("https://fonts.googleapis.com/css?family=Roboto:300,400,900&display=swap");
+
+@import "_setup";
+
+@import "_sidebar";
+
+@import "_navbar";
+
+
+h1, h3 {
+    font-weight: 600;
+}
+
+
+// @import "_index-nav";
+
+
+#content {
+    width: 100%;
+    // padding: 20px;
+    min-height: 100vh;
+    transition: all 0.3s;
+    padding-bottom: 20px; 
+}
+
+
+@import "_login-form";
+// @import "_index-page";
+
+#footer-index {
+  margin-bottom: 0;
+}

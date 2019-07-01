@@ -1,0 +1,45 @@
+// .form{
+//     background-color:transparent;
+//     position: relative;
+//     max-width: 400px;
+//     margin: 0 auto 100px;
+//     text-align: center;
+// }
+// input{
+//     margin-bottom: 10px
+// }
+// form input{
+//     outline: 1;
+//     font-family: $baseFont;
+//     border: 0;
+//     margin-bottom: 0 0 4%;
+//     padding: 5%;
+//     box-sizing: border-box;
+//     font-size: 100%;
+//     width: 100%;
+//     background-color: #ffffff;
+// }
+
+// form button{
+//     font-family: $baseFont;
+//     text-transform: uppercase;
+//     width: 100%;
+//     padding: 15px;
+//     background-color: lightslategrey;
+//     cursor: pointer;
+// }
+
+.message a{
+    font-style: normal;
+    text-decoration: none
+}
+
+.message a:hover{
+    font-style: normal;
+    text-decoration: none;  
+    color:  green;
+}
+
+#registrarForm{
+    display: none;
+}

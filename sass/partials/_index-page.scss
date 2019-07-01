@@ -1,0 +1,23 @@
+.display-1 {
+  color: $textOnDark;
+  font-weight: 900;
+}
+
+.lead {
+  color: $textOnDark;
+  font-weight: 400;
+}
+
+.bg-image {
+  background: black;
+  background-size: cover;
+  background-position: center;
+}
+
+#content {
+  width: 100%;
+  min-height: 100vh;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  padding-bottom: 20px;
+}

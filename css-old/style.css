@@ -110,17 +110,7 @@ a[aria-expanded="true"] {
 }
 
 h1, h3 {
-  font-weight: 900;
-}
-
-.display-1 {
-  color: #ffffff;
-  font-weight: 900;
-}
-
-.lead {
-  color: #ffffff;
-  font-weight: 400;
+  font-weight: 600;
 }
 
 #content {
@@ -218,10 +208,6 @@ h1, h3 {
 
 #registrarForm {
   display: none;
-}
-
-#navbar-index {
-  margin-bottom: 0px;
 }
 
 #footer-index {

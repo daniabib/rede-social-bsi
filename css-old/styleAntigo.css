@@ -1,0 +1,132 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:300,400,900&display=swap");
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+p {
+  font-family: 'Roboto';
+  font-size: 1.1em;
+  font-weight: 300;
+  line-height: 1.7em;
+  color: #000000;
+}
+
+a, a:hover, a:focus {
+  color: inherit;
+  text-decoration: none;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.navbar {
+  background: pink;
+}
+
+.wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+}
+
+#sidebar {
+  min-width: 250px;
+  max-width: 250px;
+  min-height: 100vh;
+  background: #484848;
+  color: #ffffff;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+#sidebar .sidebar-header {
+  padding: 20px;
+  background: #000000;
+}
+
+#sidebar ul.components {
+  padding: 20px 0;
+  border-bottom: 1px solid #000000;
+}
+
+#sidebar ul p {
+  color: #fff;
+  padding: 10px;
+}
+
+#sidebar ul li a {
+  padding: 10px;
+  font-size: 1.1em;
+  display: block;
+}
+
+#sidebar ul li a:hover {
+  color: #ffffff;
+  background: #9c4dcc;
+}
+
+#sidebar ul li.active > a,
+a[aria-expanded="true"] {
+  color: #ffffff;
+  background: #6a1b9a;
+}
+
+#sidebar.active {
+  margin-left: -250px;
+}
+
+ul ul a {
+  font-size: 0.9em !important;
+  padding-left: 30px !important;
+  background: #6a1b9a;
+}
+
+.navbar {
+  background: #212121;
+  color: #ffffff;
+  margin-bottom: 40px;
+  padding-right: 20px;
+}
+
+#sidebar ul li.active > a,
+a[aria-expanded="true"] {
+  background: #212121;
+}
+
+#navBarFotoPerfil {
+  height: 30px;
+  border-radius: 50%;
+  padding-right: 5px;
+}
+
+.dropdown-menu {
+  min-width: 6em;
+}
+
+.navbar button {
+  background: #9c4dcc;
+  border: none;
+}
+
+.navbar button:hover {
+  background: #38006b;
+}
+
+.dropdown-item {
+  padding-right: 0;
+}
+
+h1 {
+  font-weight: 900;
+}
+
+#content {
+  width: 100%;
+  min-height: 100vh;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  padding-bottom: 20px;
+}
+/*# sourceMappingURL=style.css.map */
