@@ -1,0 +1,64 @@
+<!-- Formulario login-->
+<form id="loginForm">
+    <h3 class="login-heading mb-4">Bem-vindo de volta!</h3>
+    <div class="form-label-group">
+        <input type="email" id="loginEmail" class="form-control" placeholder="Email address" required autofocus>
+        <label for="loginEmail">Email address</label>
+    </div>
+
+    <div class="form-label-group">
+        <input type="password" id="loginPassword" class="form-control" placeholder="Password" required>
+        <label for="loginPassword">Password</label>
+    </div>
+
+    <div class="custom-control custom-checkbox mb-3">
+        <input type="checkbox" class="custom-control-input" id="customCheck1">
+        <label class="custom-control-label" for="customCheck1">Lembrar senha</label>
+    </div>
+    <button class="btn btn-lg btn-primary btn-block btn-login text-uppercase font-weight-bold mb-2"
+        type="submit">Login</button>
+    <div class="text-center">
+        <p id="toggleLogin" class="message"><a class="small" href="#">Ainda não é cadastrado?
+                <span>Registre-se</span></a></p>
+    </div>
+</form>
+
+<!-- Formulario registrar-->
+<form id="registrarForm">
+    <h3 class="login-heading mb-4">Registre-se</h3>
+    <div class="form-label-group">
+        <input type="email" id="registrarEmail" class="form-control" placeholder="Email address" required autofocus>
+        <label for="registrarEmail">Email</label>
+    </div>
+
+    <div class="form-label-group">
+        <input type="nome" id="inputNome" class="form-control" placeholder="Nome address" required autofocus>
+        <label for="inputNome">Nome</label>
+    </div>
+
+    <div class="form-label-group">
+        <input type="empresa" id="inputEmpresa" class="form-control" placeholder="Empresa address" required autofocus>
+        <label for="inputEmpresa">Nome da empresa</label>
+    </div>
+
+    <div class="form-label-group">
+        <input type="password" id="registrarPassword" class="form-control" placeholder="Password" required>
+        <label for="registrarPassword">Senha</label>
+    </div>
+
+    <div class="form-label-group">
+        <input type="password" id="registrarPasswordConfirm" class="form-control" placeholder="Confirmar senha"
+            required>
+        <label for="registrarPasswordConfirm">Confirmar senha</label>
+    </div>
+
+
+    <button class="btn btn-lg btn-primary btn-block btn-login text-uppercase font-weight-bold mb-2" type="submit">Sign
+        in</button>
+
+    <div class="text-center">
+        <p id="toggleRegistrar" class="message"><a class="small" href="#">Já é cadastrado? Acessar</a></p>
+    </div>
+
+
+</form>
