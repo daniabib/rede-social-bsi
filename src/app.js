@@ -1,24 +1,7 @@
 const path = require('path');
 const express = require('express');
 const hbs = require('hbs');
-const mongoose = require('mongoose');
-
-mongoose.connect('mongodb://127.0.0.1:27017/frakdb', { 
-    useNewUrlParser: true,
-    useCreateIndex: true,
-});
-
-let db = mongoose.connection;
-
-// Checar conexão
-db.once('open', function(){
-    console.log('Connected to MongoDB');
-})
-
-// Checa erros DB
-db.on('error', function(){
-    console.log(err);
-});
+const bodyParser = require('body-parser');
 
 // Inicia o App
 const app = express();
@@ -26,6 +9,8 @@ const port = process.env.PORT || 3000;
 
 // Carrega os Modulos
 let Article = require('./models/article');
+
+require('./controllers/authController')(app);
 
 // usamos .join() (do path) para direcionar o express para o nosso diretório público
 const publicDirectoryPath = path.join(__dirname, '../public');
@@ -42,25 +27,38 @@ app.set('view engine', 'hbs');
 app.set('views', viewsPath);
 hbs.registerPartials(partialsPath)
 
-// ::: app.get() : Método que configura como nosso servidor responde um GET request (html, JSON etc.)
-// Arg 1: route
-// Arg 2: função que especifica o que queremos fazer quando
-// alguém requisita o route do arg 1.
-
-//::: Arg 2
-// :: req : objeto que contém infrmação sobre income request to the server
-// :: res : contém métodos que nos permite customizar a resposta 
-app.get('', (req, res) => {
+// Index Route
+app.get('/', (req, res) => {
     res.render('index')
 });
 
 
 // Home Route
-app.get('/home', (req, res) => {
-    // É só plugar o html do home
-    res.render('home');
-});
+// app.get('/home', (req, res) => {
+//     // É só plugar o html do home
+//     Article.find({}, function(err, articles){
+//         if(err){
+//             console.log()
+//         } else {
+//             res.render('home', {
+//             title: 'title',
+//             articles: articles
+//             }); 
+//         }
+//     });
+// });
 
+app.get('/home', async (req, res) => {
+    try {
+        const artigo = await Article.find({});
+        console.log(artigo);
+        res.render('home', {
+            title: artigo,
+        })
+    } catch (e) {
+        res.status(500).send()
+    }
+})
 
 app.get('/login', (req, res) => {
     // Podemos mandar um objeto como resposta que o express
@@ -96,11 +94,5 @@ app.get('*', (req, res) => {
 });
 
 app.listen(port, () => {
-    console.log(`Server is up on ${port}`)
-});
-
-/* É importatne saber sobre Query strings. A maneira como o browser passa a informação para o servidor através daurl é por json também (key : value pairs) Começa depois da ?. As opções começam depois de & 
-
-No request éxiste um objeto 'query'
-
-Ex: /products?search=games&rating=5. */
+    console.log('Server is up on port ' + port)
+})
